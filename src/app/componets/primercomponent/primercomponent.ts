@@ -1,0 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-primer',
+    standalone: false,
+    templateUrl: './primercomponente.html',
+    styleUrl: 'primercomponent.css'
+
+ 
+})
+
+export class PrimerComponent implements OnInit {
+    constructor() { }
+
+    ngOnInit() { }
+}
