@@ -1,0 +1,19 @@
+<h1> Numeros estilos component </h1> 
+<ul >
+     Tienes {{numeros.length}} 
+<button (click)="generarNumero()">Generar</button>
+<h1> Numeros estilos component </h1> 
+<ul >
+     Tienes {{numeros.length}} numeros
+
+
+
+    @for (n of numeros; track n){
+          <li [ngClass]="{
+            par: n % 2 == 0,
+            impar: n % 2 == 1
+
+          }"  
+              >{{n}} </li>
+           }
+</ul>
